@@ -1,0 +1,127 @@
+<!-- min 47 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>jopidev | Frontend Developer</title>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./assets/logo2.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Frontend Developer</p>
+                <h1>Hi, I´m <span>Jorge</span> <br>Pinto From Chile</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- About -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./assets/user.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a passionate Frontend Developer with over 4 years of experience in developing modern and highly functional web interfaces. My focus is on creating exceptional user experiences through modern and highly functional web interfaces. With a strong foundation in project management and effective communication of strategies, I am committed to delivering first-class software solutions in dynamic environments where excellence and execution are paramount.
+                    <br>
+                    <br>
+                    My technical skills include a deep knowledge of JavaScript, React, and Tailwind CSS. These tools enable me to develop attractive and responsive user interfaces, ensuring an optimal user experience on all platforms and devices. I am an enthusiastic problem solver and an effective collaborator in multidisciplinary teams. I am constantly seeking opportunities to explore new technologies and development techniques, and I strive to stay updated on the latest trends in web development.
+                    <br>
+                    <br>
+                    My passion for constant innovation and my commitment to professional growth make me a valuable asset to any development team, and I am excited to contribute to the ongoing success of challenging and exciting projects.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab(`skills`)">Skills</p>
+                        <p class="tab-links" onclick="openTab(`experience`)" >Experience</p>
+                        <p class="tab-links" onclick="openTab(`education`)">Education</p>
+                        
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Mar,2024 - Current</span><br>Frontend Developer at Streat Food</li>
+                            
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Jul,2023 - Mar,2024</span><br>FullStack Developer with JavaScript at Platzi</li>
+
+                            <li><span>Mar,2024 - Current</span><br>Self-directed Education</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- Services -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <h2>Web Development</h2>
+                <p>Turning your ideas into digital presence with my web development service. From custom websites to advanced applications, I'm here to bring your online projects to life. Stand out on the web with innovative and efficient solutions! 💻✨</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <h2>Web Design</h2>
+                <p>Bringing your ideas to life with my web design service. From sleek interfaces to vibrant designs, I'm here to make your online vision a reality. Let's elevate your web presence together! 🎨✨</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <h2>UX/UI Design</h2>
+                <p>Crafting seamless digital experiences with my UX/UI design service. From intuitive interfaces to engaging user journeys, I'm here to elevate your online presence. Let's create designs that leave a lasting impact! 🌟🖌️</p>
+                <a href="#">learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+
+
+
+<script>
+    var tabLinks = document.getElementsByClassName("tab-links");
+    var tabContents = document.getElementsByClassName("tab-contents");
+
+    function openTab(tabName){
+        for(tabLink of tabLinks){
+            tabLink.classList.remove("active-link");
+        }
+        for(tabContent of tabContents){
+            tabContent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabName).classList.add("active-tab");
+    }
+</script>
+
+</body>
+</html>
