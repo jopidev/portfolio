@@ -1,4 +1,4 @@
-<!-- min 47 -->
+<!-- min 1:25:10 -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -7,12 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>jopidev | Frontend Developer</title>
+    <script src="https://kit.fontawesome.com/f1f3221ea7.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="header">
         <div class="container">
             <nav>
-                <img src="./assets/logo2.png" class="logo">
+                <img src="./assets/logo3.png" class="logo">
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
@@ -86,26 +87,100 @@
         <h1 class="sub-title">My Services</h1>
         <div class="services-list">
             <div>
+                <i class="fa-solid fa-code"></i>
                 <h2>Web Development</h2>
                 <p>Turning your ideas into digital presence with my web development service. From custom websites to advanced applications, I'm here to bring your online projects to life. Stand out on the web with innovative and efficient solutions! 💻✨</p>
-                <a href="#">learn more</a>
+                <a href="#">Learn more</a>
             </div>
             <div>
-                <h2>Web Design</h2>
-                <p>Bringing your ideas to life with my web design service. From sleek interfaces to vibrant designs, I'm here to make your online vision a reality. Let's elevate your web presence together! 🎨✨</p>
-                <a href="#">learn more</a>
-            </div>
-            <div>
+                <i class="fa-brands fa-figma"></i>
                 <h2>UX/UI Design</h2>
                 <p>Crafting seamless digital experiences with my UX/UI design service. From intuitive interfaces to engaging user journeys, I'm here to elevate your online presence. Let's create designs that leave a lasting impact! 🌟🖌️</p>
-                <a href="#">learn more</a>
+                <a href="#">Learn more</a>
             </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Web Design</h2>
+                <p>Bringing your ideas to life with my web design service. From sleek interfaces to vibrant designs, I'm here to make your online vision a reality. Let's elevate your web presence together! 🎨✨</p>
+                <a href="#">Learn more</a>
+            </div>
+            
         </div>
     </div>
 </div>
     </div>
 
+    <!-- Portfolio -->
 
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title"> My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="./assets/work-1.png" alt="">
+                <div class="layer">
+                    <h3><b>Social Media App</b></h3>
+                    <p>The app connects you yo the talented people around the world. Download it from play store.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./assets/work-2.png" alt="">
+                <div class="layer">
+                    <h3><b>Social Media App</b></h3>
+                    <p>The app connects you uo the talented people around the world.
+                        Download it from play store.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./assets/work-3.png" alt="">
+                <div class="layer">
+                    <h3><b>Social Media App</b></h3>
+                    <p>The app connects you uo the talented people around the world.
+                        Download it from play store.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!-- Contact -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>devjorgepinto@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> (+56)984434402</p>
+                <div class="social-icons">
+                    <a href="https://github.com/jopidev"><i class="fa-brands fa-github"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/jorge-pinto-ba1524122/"><i class="fa-brands fa-linkedin"></i></a> 
+                </div>
+                <a href="./assets/JORGE PINTO CV DEV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+
+                    <input type="email" name="email" placeholder="Your Email" required>
+
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script>
     var tabLinks = document.getElementsByClassName("tab-links");
