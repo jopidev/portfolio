@@ -1,4 +1,4 @@
-<!-- min 1:25:10 -->
+<!-- min 1:46:10 -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -14,14 +14,16 @@
         <div class="container">
             <nav>
                 <img src="./assets/logo3.png" class="logo">
-                <ul>
+                <ul id="sidemenu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>Frontend Developer</p>
@@ -180,6 +182,9 @@
             </div>
         </div>
     </div>
+    <div class="copyright">
+        <p>Copyright © Jorge | Made with <i class="fa-brands fa-html5"></i> <i class="fa-brands fa-css3-alt"></i> <i class="fa-brands fa-square-js"></i> </p>
+    </div>
 </div>
 
 <script>
@@ -195,6 +200,18 @@
         }
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabName).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
     }
 </script>
 
