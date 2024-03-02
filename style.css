@@ -29,6 +29,10 @@ nav{
 }
 .logo{
     width: 152px;
+    transition: transform 0.3s ease;
+}
+.logo:hover {
+    transform: scale(1.15); 
 }
 nav ul li{
     display: inline-block;
